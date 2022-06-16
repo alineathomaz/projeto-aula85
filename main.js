@@ -19,21 +19,21 @@ function add() {
 	background_Imgtag.onload = uploadBackground;
 	background_Imgtag.src=background_Image;
 
-	grenncar_Imgtag =  new Image();
+	greencar_Imgtag =  new Image();
 	greencar_Imgtag.onload = uploadgreencar;
 	greencar_Imgtag.src=greencar_Image;
 }
 
 function uploadBackground() {
 	//Defina a função ‘uploadBackground’
-ctx.drawIMage(background_Imgtag, 0, 0, canvas.width, canvas.height);
+ctx.drawImage(background_Imgtag, 0, 0, canvas.width, canvas.height);
 // na linha acima substitua greencar_Imgtag por backgroud_Imgtag, greencar_x por 0, greencar_y por 0, greencar_height por canvas.width,
 // e  greencar_width por carvas.height
 }
 
 function uploadgreencar() { //troque por uploadgreencar, pois nas outras partes do código está tudo minúsculo
 	//Defina a função ‘uploadGreenCar’. ← ignore essa instrução, pois precisa estar tudo minúsculo para ficar igual ao restante do código
-	ctx.drawIMage(greencar_Imgtag, greencar_x, greencar_y, greencar_width, greencar_height);
+	ctx.drawImage(greencar_Imgtag, greencar_x, greencar_y, greencar_width, greencar_height);
 	//inverta a posição do greencar_height e do greencar_widht (largura primeiro, depois altura)
 	
 }
